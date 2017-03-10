@@ -1,84 +1,330 @@
 <?php
-$id = $_GET["id"];
-require("templates/header.php");
+require("templates/header_cate.php");
 ?>
-<div class="content">
-	<?php
-	require("library/conn.php");
-	$sql = "SELECT cate_id, cate_title FROM cate where cate_id='$id'";
-	$re = mysqli_query($conn, $sql);
-	$data = mysqli_fetch_assoc($re);
-	echo "<h2 class='center'>$data[cate_title]</h2>";
-
-	$sql2 = "SELECT a.post_id, a.cate_id, b.post_title FROM post_cate as a INNER JOIN post as b ON a.post_id=b.post_id WHERE a.cate_id='$data[cate_id]'";
-	$re2 = mysqli_query($conn, $sql2);
-	while ($data2 = mysqli_fetch_assoc($re2)) {
-		echo "<div class='card white section container'>";
-			echo "<h2 class='medium'>$data2[post_title]</h2>";
-		echo "</div>";
-	}
-
-	mysqli_close($conn);
-	?>
+<div id="breadcrunb" class="light-grey">
+	<div class="content padding text-grey">
+		<span><a href="#">TRANG CHỦ</a></span>	/
+		<span class="padding-tiny"><a href="#">SỨC KHỎE SẮC ĐẸP</a></span> /
+		<span class="padding-tiny"><a href="#">CHĂM SÓC DA</a></span>
+	</div>
 </div>
+<section class="content">
+	<div class="section">
+		<div class="row">
+			<div class="col padding-left" style="width:225px;">
+				<div class="light-grey padding margin-bottom">
+					<a href="#">SỨC KHỎE SẮC ĐẸP</a>
+					<ul class="ul border-0">
+						<li><a href="#">Dầu gội</a></li>
+						<li><a href="#">Chăm sóc da</a></li>
+						<li><a href="#">Sữa rửa mặt</a></li>
+						<li><a href="#">Dầu gội</a></li>
+						<li><a href="#">Chăm sóc da</a></li>
+						<li><a href="#">Sữa rửa mặt</a></li>
+					</ul>
+				</div>
 
+				<div class="brand light-grey padding">
+					<a href="#" class="medium">Thương hiệu</a>
+					<p><input type="text" class="input border" placeholder="Tìm kiếm thương hiệu"></p>
+					<ul class="ul">
+						<li><input type="checkbox" class="check">
+						<label for="" class="validate"><a href="#">Dove</a></label><br></li>
+						<li><input type="checkbox" class="check">
+						<label for="" class="validate"><a href="#">Shiseido</a></label><br></li>
+						<li><input type="checkbox" class="check">
+						<label for="" class="validate"><a href="#">The body</a></label><br></li>
+						<li><input type="checkbox" class="check">
+						<label for="" class="validate"><a href="#">Hony</a></label><br></li>
+						<li><input type="checkbox" class="check">
+						<label for="" class="validate"><a href="#">Hamet</a></label><br></li>
+						<li><input type="checkbox" class="check">
+						<label for="" class="validate"><a href="#">Omo</a></label><br></li>
+						<li><input type="checkbox" class="check">
+						<label for="" class="validate"><a href="#">Sunsilk</a></label><br></li>
+						<li><input type="checkbox" class="check">
+						<label for="" class="validate"><a href="#">Thai duong</a></label><br></li>
+						<li><input type="checkbox" class="check">
+						<label for="" class="validate"><a href="#">burbery</a></label><br></li>
+						<li><input type="checkbox" class="check">
+						<label for="" class="validate"><a href="#">Dove</a></label><br></li>
+						<li><input type="checkbox" class="check">
+						<label for="" class="validate"><a href="#">Dove</a></label><br></li>
+						<li><input type="checkbox" class="check">
+						<label for="" class="validate"><a href="#">Dove</a></label><br></li>
+					</ul>
+				</div>				
 
-<div class="content">
+			</div>
 
+			<div class="rest">
+				<div class="container margin-bottom">
+					<h1 class="left large margin-0">Chăm sóc da <span class="text-light-grey"> | </span><span class="small text-grey"> Tìm thấy 20 sản phẩm</span></h1>
+					<select name="" id="" class="right padding-4 container white round">
+						<option value="0">Sắp xếp theo</option>
+						<option value="">Gía tăng dần</option>
+						<option value="">Gía giảm dần</option>
+						<option value="">Hàng mới về</option>
+						<option value="">Bán chạy nhất</option>
+					</select>
+				</div>
+				<div class="cate-product row container">	
 
-<?php
-	require("library/conn.php");
-	$sql3 = "SELECT * FROM cate";
-	$re3 = mysqli_query($conn, $sql3);
-	$cate = array();
-	while ($row = mysqli_fetch_assoc($re3)){
-	    $cate[] = $row;
-	}
-	// BƯỚC 2: HÀM ĐỆ QUY HIỂN THỊ CATEGORIES
-	function showCate($cate, $cate_parent = 0, $char = '', $stt = 0)
-	{
-	    // BƯỚC 2.1: LẤY DANH SÁCH CATE CON
-	    $cate_child = array();
-	    foreach ($cate as $key => $item)
-	    {
+					<div class="col l3 m4 s6 hover-shadow margin-bottom" >
+						<div class="product-thumb container margin-bottom">
+							<div class="product-image" style="height: 240px;">
+								<a href="#"><img src="../public/images/product1.jpg" alt="" class="image"></a>
+							</div>
+							<div class="product-caption">
+								<div class="info">
+									<a href="#"><h4 class="small text-grey">Sữa tắm cao cấp Happy Bath Hàn Quốc Chai 500ml + Túi 250ml</h4></a>
+									<p>
+										<span class="text-red large">220,000đ</span>
+										<span class="text-grey"><del>150,000đ</del></span>
+									</p>
+								</div>
+								<div class="cart">
+									<a href="#" class="btn-block red">Mua hàng</a>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col l3 m4 s6  hover-shadow margin-bottom" >
+						<div class="product-thumb container margin-bottom">
+							<div class="product-image">
+								<a href="#"><img src="../public/images/product2.jpg" alt="" class="image"></a>
+							</div>
+							<div class="product-caption">
+								<div class="info">
+									<a href="#"><h4 class="small text-grey">Sữa tắm cao cấp Happy Bath Hàn Quốc Chai 500ml + Túi 250ml</h4></a>
+									<p>
+										<span class="text-red large">220,000đ</span>
+										<span class="text-grey"><del>150,000đ</del></span>
+									</p>
+								</div>
+								<div class="cart">
+									<a href="#" class="btn-block red">Mua hàng</a>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col l3 m4 s6  hover-shadow margin-bottom" >
+						<div class="product-thumb container margin-bottom">
+							<div class="product-image">
+								<a href="#"><img src="../public/images/product3.jpg" alt="" class="image"></a>
+							</div>
+							<div class="product-caption">
+								<div class="info">
+									<a href="#"><h4 class="small text-grey">Sữa tắm cao cấp Happy Bath Hàn Quốc Chai 500ml + Túi 250ml</h4></a>
+									<p>
+										<span class="text-red large">220,000đ</span>
+										<span class="text-grey"><del>150,000đ</del></span>
+									</p>
+								</div>
+								<div class="cart">
+									<a href="#" class="btn-block red">Mua hàng</a>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col l3 m4 s6  hover-shadow margin-bottom" >
+						<div class="product-thumb container margin-bottom">
+							<div class="product-image">
+								<a href="#"><img src="../public/images/product4.jpg" alt="" class="image"></a>
+							</div>
+							<div class="product-caption">
+								<div class="info">
+									<a href="#"><h4 class="small text-grey">Sữa tắm cao cấp Happy Bath Hàn Quốc Chai 500ml + Túi 250ml</h4></a>
+									<p>
+										<span class="text-red large">220,000đ</span>
+										<span class="text-grey"><del>150,000đ</del></span>
+									</p>
+								</div>
+								<div class="cart">
+									<a href="#" class="btn-block red">Mua hàng</a>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col l3 m4 s6  hover-shadow margin-bottom" >
+						<div class="product-thumb container margin-bottom">
+							<div class="product-image">
+								<a href="#"><img src="../public/images/product1.jpg" alt="" class="image"></a>
+							</div>
+							<div class="product-caption">
+								<div class="info">
+									<a href="#"><h4 class="small text-grey">Sữa tắm cao cấp Happy Bath Hàn Quốc Chai 500ml + Túi 250ml</h4></a>
+									<p>
+										<span class="text-red large">220,000đ</span>
+										<span class="text-grey"><del>150,000đ</del></span>
+									</p>
+								</div>
+								<div class="cart">
+									<a href="#" class="btn-block red">Mua hàng</a>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col l3 m4 s6  hover-shadow margin-bottom" >
+						<div class="product-thumb container margin-bottom">
+							<div class="product-image">
+								<a href="#"><img src="../public/images/product2.jpg" alt="" class="image"></a>
+							</div>
+							<div class="product-caption">
+								<div class="info">
+									<a href="#"><h4 class="small text-grey">Sữa tắm cao cấp Happy Bath Hàn Quốc Chai 500ml + Túi 250ml</h4></a>
+									<p>
+										<span class="text-red large">220,000đ</span>
+										<span class="text-grey"><del>150,000đ</del></span>
+									</p>
+								</div>
+								<div class="cart">
+									<a href="#" class="btn-block red">Mua hàng</a>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col l3 m4 s6  hover-shadow margin-bottom" >
+						<div class="product-thumb container margin-bottom">
+							<div class="product-image">
+								<a href="#"><img src="../public/images/product3.jpg" alt="" class="image"></a>
+							</div>
+							<div class="product-caption">
+								<div class="info">
+									<a href="#"><h4 class="small text-grey">Sữa tắm cao cấp Happy Bath Hàn Quốc Chai 500ml + Túi 250ml</h4></a>
+									<p>
+										<span class="text-red large">220,000đ</span>
+										<span class="text-grey"><del>150,000đ</del></span>
+									</p>
+								</div>
+								<div class="cart">
+									<a href="#" class="btn-block red">Mua hàng</a>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col l3 m4 s6  hover-shadow margin-bottom" >
+						<div class="product-thumb container margin-bottom">
+							<div class="product-image">
+								<a href="#"><img src="../public/images/product4.jpg" alt="" class="image"></a>
+							</div>
+							<div class="product-caption">
+								<div class="info">
+									<a href="#"><h4 class="small text-grey">Sữa tắm cao cấp Happy Bath Hàn Quốc Chai 500ml + Túi 250ml</h4></a>
+									<p>
+										<span class="text-red large">220,000đ</span>
+										<span class="text-grey"><del>150,000đ</del></span>
+									</p>
+								</div>
+								<div class="cart">
+									<a href="#" class="btn-block red">Mua hàng</a>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col l3 m4 s6  hover-shadow margin-bottom" >
+						<div class="product-thumb container margin-bottom">
+							<div class="product-image">
+								<a href="#"><img src="../public/images/product5.jpg" alt="" class="image"></a>
+							</div>
+							<div class="product-caption">
+								<div class="info">
+									<a href="#"><h4 class="small text-grey">Sữa tắm cao cấp Happy Bath Hàn Quốc Chai 500ml + Túi 250ml</h4></a>
+									<p>
+										<span class="text-red large">220,000đ</span>
+										<span class="text-grey"><del>150,000đ</del></span>
+									</p>
+								</div>
+								<div class="cart">
+									<a href="#" class="btn-block red">Mua hàng</a>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col l3 m4 s6  hover-shadow margin-bottom" >
+						<div class="product-thumb container margin-bottom">
+							<div class="product-image">
+								<a href="#"><img src="../public/images/product6.jpg" alt="" class="image"></a>
+							</div>
+							<div class="product-caption">
+								<div class="info">
+									<a href="#"><h4 class="small text-grey">Sữa tắm cao cấp Happy Bath Hàn Quốc Chai 500ml + Túi 250ml</h4></a>
+									<p>
+										<span class="text-red large">220,000đ</span>
+										<span class="text-grey"><del>150,000đ</del></span>
+									</p>
+								</div>
+								<div class="cart">
+									<a href="#" class="btn-block red">Mua hàng</a>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col l3 m4 s6  hover-shadow margin-bottom" >
+						<div class="product-thumb container margin-bottom">
+							<div class="product-image">
+								<a href="#"><img src="../public/images/product7.jpg" alt="" class="image"></a>
+							</div>
+							<div class="product-caption">
+								<div class="info">
+									<a href="#"><h4 class="small text-grey">Sữa tắm cao cấp Happy Bath Hàn Quốc Chai 500ml + Túi 250ml</h4></a>
+									<p>
+										<span class="text-red large">220,000đ</span>
+										<span class="text-grey"><del>150,000đ</del></span>
+									</p>
+								</div>
+								<div class="cart">
+									<a href="#" class="btn-block red">Mua hàng</a>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col l3 m4 s6  hover-shadow margin-bottom" >
+						<div class="product-thumb container margin-bottom">
+							<div class="product-image">
+								<a href="#"><img src="../public/images/product8.jpg" alt="" class="image"></a>
+							</div>
+							<div class="product-caption">
+								<div class="info">
+									<a href="#"><h4 class="small text-grey">Sữa tắm cao cấp Happy Bath Hàn Quốc Chai 500ml + Túi 250ml</h4></a>
+									<p>
+										<span class="text-red large">220,000đ</span>
+										<span class="text-grey"><del>150,000đ</del></span>
+									</p>
+								</div>
+								<div class="cart">
+									<a href="#" class="btn-block red">Mua hàng</a>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					
 
-        // Nếu là chuyên mục con thì hiển thị
-	        if ($item['cate_parent'] == $cate_parent)
-	        {
-	            $cate_child[] = $item;
-	            unset($cate[$key]);
-	        }
-	    }
-	     
-	    // BƯỚC 2.2: HIỂN THỊ DANH SÁCH CHUYÊN MỤC CON NẾU CÓ
-	    if ($cate_child)
-	    {
-	        if ($stt == 0){
-	            echo "<ul class='navbar red'>";
-	            echo "<li>";
-	        }
-	        else if ($stt == 1){
-	            echo "<ul>";
-	            echo "<li>";
-	        }
-	        else if ($stt == 2){
-	            echo "<ul>";
-	            echo "<li>";
-	        }
-	         
-	        foreach ($cate_child as $key => $item)
-	        {
-				echo .$item[cate_title];
-	            showCate($cate, $item[cate_id], $char.'|---', ++$stt);
-	        }
-	            echo "</li>";
-
-	        echo "</ul>";
-	    }
-	}
-	mysqli_close($conn);
-
-showCate($cate); ?>
-
-</div>
-
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="center">
+			<div class="bar large">
+			  <a href="#" class="button">&laquo;</a>
+			  <a href="#" class="button">1</a>
+			  <a href="#" class="button red">2</a>
+			  <a href="#" class="button">3</a>
+			  <a href="#" class="button">4</a>
+			  <a href="#" class="button">&raquo;</a>
+			</div>
+		</div>
+	
+</section>
