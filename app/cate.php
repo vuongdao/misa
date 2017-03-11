@@ -11,7 +11,7 @@ require("templates/header_cate.php");
 <section class="content">
 	<div class="section">
 		<div class="row">
-			<div class="col padding-left" style="width:225px;">
+			<div class="col padding-left hide-small hide-medium" style="width:225px;">
 				<div class="light-grey padding margin-bottom">
 					<a href="#">SỨC KHỎE SẮC ĐẸP</a>
 					<ul class="ul border-0">
@@ -70,9 +70,9 @@ require("templates/header_cate.php");
 				</div>
 				<div class="cate-product row container">	
 
-					<div class="col l3 m4 s6 hover-shadow margin-bottom" >
+					<div class="col l3 m3 s6 hover-shadow margin-bottom" >
 						<div class="product-thumb container margin-bottom">
-							<div class="product-image" style="height: 240px;">
+							<div class="product-image">
 								<a href="#"><img src="../public/images/product1.jpg" alt="" class="image"></a>
 							</div>
 							<div class="product-caption">
@@ -83,14 +83,14 @@ require("templates/header_cate.php");
 										<span class="text-grey"><del>150,000đ</del></span>
 									</p>
 								</div>
-								<div class="cart">
+								<div class="cart hide-small">
 									<a href="#" class="btn-block red">Mua hàng</a>
 								</div>
 								
 							</div>
 						</div>
 					</div>
-					<div class="col l3 m4 s6  hover-shadow margin-bottom" >
+					<div class="col l3 m3 s6  hover-shadow margin-bottom" >
 						<div class="product-thumb container margin-bottom">
 							<div class="product-image">
 								<a href="#"><img src="../public/images/product2.jpg" alt="" class="image"></a>
@@ -110,7 +110,7 @@ require("templates/header_cate.php");
 							</div>
 						</div>
 					</div>
-					<div class="col l3 m4 s6  hover-shadow margin-bottom" >
+					<div class="col l3 m3 s6  hover-shadow margin-bottom" >
 						<div class="product-thumb container margin-bottom">
 							<div class="product-image">
 								<a href="#"><img src="../public/images/product3.jpg" alt="" class="image"></a>
@@ -130,7 +130,7 @@ require("templates/header_cate.php");
 							</div>
 						</div>
 					</div>
-					<div class="col l3 m4 s6  hover-shadow margin-bottom" >
+					<div class="col l3 m3 s6  hover-shadow margin-bottom" >
 						<div class="product-thumb container margin-bottom">
 							<div class="product-image">
 								<a href="#"><img src="../public/images/product4.jpg" alt="" class="image"></a>
@@ -150,7 +150,7 @@ require("templates/header_cate.php");
 							</div>
 						</div>
 					</div>
-					<div class="col l3 m4 s6  hover-shadow margin-bottom" >
+					<div class="col l3 m3 s6  hover-shadow margin-bottom" >
 						<div class="product-thumb container margin-bottom">
 							<div class="product-image">
 								<a href="#"><img src="../public/images/product1.jpg" alt="" class="image"></a>
@@ -170,7 +170,7 @@ require("templates/header_cate.php");
 							</div>
 						</div>
 					</div>
-					<div class="col l3 m4 s6  hover-shadow margin-bottom" >
+					<div class="col l3 m3 s6  hover-shadow margin-bottom" >
 						<div class="product-thumb container margin-bottom">
 							<div class="product-image">
 								<a href="#"><img src="../public/images/product2.jpg" alt="" class="image"></a>
@@ -190,7 +190,7 @@ require("templates/header_cate.php");
 							</div>
 						</div>
 					</div>
-					<div class="col l3 m4 s6  hover-shadow margin-bottom" >
+					<div class="col l3 m3 s6  hover-shadow margin-bottom" >
 						<div class="product-thumb container margin-bottom">
 							<div class="product-image">
 								<a href="#"><img src="../public/images/product3.jpg" alt="" class="image"></a>
@@ -210,7 +210,7 @@ require("templates/header_cate.php");
 							</div>
 						</div>
 					</div>
-					<div class="col l3 m4 s6  hover-shadow margin-bottom" >
+					<div class="col l3 m3 s6  hover-shadow margin-bottom" >
 						<div class="product-thumb container margin-bottom">
 							<div class="product-image">
 								<a href="#"><img src="../public/images/product4.jpg" alt="" class="image"></a>
@@ -230,7 +230,7 @@ require("templates/header_cate.php");
 							</div>
 						</div>
 					</div>
-					<div class="col l3 m4 s6  hover-shadow margin-bottom" >
+					<div class="col l3 m3 s6  hover-shadow margin-bottom" >
 						<div class="product-thumb container margin-bottom">
 							<div class="product-image">
 								<a href="#"><img src="../public/images/product5.jpg" alt="" class="image"></a>
@@ -250,7 +250,7 @@ require("templates/header_cate.php");
 							</div>
 						</div>
 					</div>
-					<div class="col l3 m4 s6  hover-shadow margin-bottom" >
+					<div class="col l3 m3 s6  hover-shadow margin-bottom" >
 						<div class="product-thumb container margin-bottom">
 							<div class="product-image">
 								<a href="#"><img src="../public/images/product6.jpg" alt="" class="image"></a>
@@ -270,7 +270,7 @@ require("templates/header_cate.php");
 							</div>
 						</div>
 					</div>
-					<div class="col l3 m4 s6  hover-shadow margin-bottom" >
+					<div class="col l3 m3 s6  hover-shadow margin-bottom" >
 						<div class="product-thumb container margin-bottom">
 							<div class="product-image">
 								<a href="#"><img src="../public/images/product7.jpg" alt="" class="image"></a>
@@ -290,7 +290,7 @@ require("templates/header_cate.php");
 							</div>
 						</div>
 					</div>
-					<div class="col l3 m4 s6  hover-shadow margin-bottom" >
+					<div class="col l3 m3 s6  hover-shadow margin-bottom" >
 						<div class="product-thumb container margin-bottom">
 							<div class="product-image">
 								<a href="#"><img src="../public/images/product8.jpg" alt="" class="image"></a>

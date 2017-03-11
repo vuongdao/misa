@@ -27,7 +27,7 @@ echo "<title>web ban hang</title>";
 </head>
 <body class="light-grey">
 
-<div class="header-top">
+<div class="header-top hide-small hide-medium">
 	<div class="light-grey">
 		<div class="content">
 			<div class="container">
@@ -38,7 +38,7 @@ echo "<title>web ban hang</title>";
 </div>
 <header class="white">
 	<div class="content">
-		<div class="row-padding">
+		<div class="row-padding hide-small hide-medium">
 			<div class="col l2 padding-16">
 				<a href="#"><img src="../public/images/logo.png" alt="Misashop.vn" class="hover-opacity" style="width:147px"></a>
 			</div>
@@ -92,7 +92,6 @@ echo "<title>web ban hang</title>";
 					     </li>
 				     
 				    </ul>
-				
 			</div>
 			<div class="col l4 padding-16">
 				<div class="bar">
@@ -118,5 +117,24 @@ echo "<title>web ban hang</title>";
 				</div>
 			</div>
 		</div>
+		<div class="row hide-large padding">
+			<div class="col s3 padding-4">
+				<a href="#"><i class="fa fa-bars xlarge text-grey"></i></a>
+			</div>
+			<div class="col s6 center">
+				<a href="#"><img src="../public/images/logo.png" alt="Misashop.vn" class="hover-opacity" style="width:130px"></a>
+			</div>
+			<div class="col s3 padding-4">
+				<div class="right" style="position:relative;">
+					<a href="#"><i class="fa fa-shopping-cart xlarge text-grey text-red"></i></a>
+					<span class="text-green" style="position:absolute;font-size:11px;overflow: hidden;text-overflow: ellipsis;white-space:nowrap;top:-9px;left:1px;width:25px;height:16px;text-align:center;">5</span>
+				</div>
+			</div>
+		</div>
+		<div class="search-s hide-large container padding-bottom">
+			<input type="text" class="input border-0 round-large light-grey" placeholder="Tìm kiếm sản phẩm của bạn...">
+		</div>
 	</div>
 </header>
+
+		

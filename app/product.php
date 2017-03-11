@@ -12,10 +12,10 @@ require("templates/header_product.php");
 <section class="content">
 	<div class="section">
 		<div class="row-padding">
-			<div class="threequarter">
-				<div class="half">
-					<div id="product-gallery">
-						<div id="thumbnails" class="col padding-16" style="width:60px;">
+			<div class="col l9 m12 s12">
+				<div class="col l6 m12 s12">
+					<div id="product-gallery hide-small">
+						<div id="thumbnails" class="col padding-16 hide-small hide-medium" style="width:60px;">
 							 <a href="#" class="padding-32" data-image="../public/images/product1.jpg" data-zoom-image="../public/images/product1.jpg">
 							  <img id="img_01" src="../public/images/product1.jpg" class="card-2" style="width: 54px;margin-bottom:6px">
 							  </a>
@@ -32,12 +32,33 @@ require("templates/header_product.php");
 							    <img id="img_01" src="../public/images/product4.jpg" class="card-2" style="width: 54px;margin-bottom:6px">
 							  </a>
 						</div>
-						<div class="stage col rest" style="width:350px;">
+						<div id="product-gallery-s" class="hide-large">
+							<div class="display-container padding-xxlarge">
+							<img class="mySlides" src="../public/images/product1.jpg" style="width:100%">
+							<img class="mySlides" src="../public/images/product2.jpg" style="width:100%">
+							<img class="mySlides" src="../public/images/product3.jpg" style="width:100%">
+							<img class="mySlides" src="../public/images/product4.jpg" style="width:100%">
+							<img class="mySlides" src="../public/images/product5.jpg" style="width:100%">
+
+							<div class="center section large text-white display-middle" style="width:100%;">
+							    <div class="left padding-left text-red" onclick="plusDivs(-1)">&#10094;</div>
+							    <div class="right padding-right text-red" onclick="plusDivs(1)">&#10095;</div>
+							</div>
+							<div class="center section large text-white display-bottommiddle" style="width:100%;bottom:-10px;">
+							    <span class="badge demo border transparent hover-white" onclick="currentDiv(1)" style="width:10px;height:10px;padding:0;"> </span>
+							    <span class="badge demo border transparent hover-white" onclick="currentDiv(2)" style="width:10px;height:10px;padding:0;"></span>
+							    <span class="badge demo border transparent hover-white" onclick="currentDiv(3)" style="width:10px;height:10px;padding:0;"></span>
+							    <span class="badge demo border transparent hover-white" onclick="currentDiv(4)" style="width:10px;height:10px;padding:0;"></span>
+							    <span class="badge demo border transparent hover-white" onclick="currentDiv(5)" style="width:10px;height:10px;padding:0;"></span>
+							</div>
+						</div>
+						</div>
+						<div class="stage col rest hide-small hide-medium" style="width:350px;">
 							<img id="zoom_01" src="../public/images/product3.jpg" data-zoom-image="../public/images/product3.jpg" alt="" class="image">
 						</div>
 					</div>
 				</div>
-				<div class="half">
+				<div class="l6 m12 s12">
 					<h1 class="large margin-0">Nước hoa nam Deep Sea Jeanne D'urfe Paris 50ml</h1>
 					<p><span class="text-grey">Thương hiệu: </span><a href="#" class="text-blue hover-opacity">Gucci</a></p>
 					<p>Nước hoa mini cho nam Versace Eros Eau De Toilette với hương thơm mạnh mẽ, cá tính nhưng ẩn giấu dư vị nống ấm, quyến luyến dụ hoặc.</p>
@@ -160,7 +181,7 @@ require("templates/header_product.php");
 					</div>
 				</div>
 			</div>
-			<div class="quarter">
+			<div class="col l3 hide-small hide-medium">
 				<div class="light-gray padding">
 				
 					<i class="fa fa-truck fa-2x left margin-right"></i><p>Giao hàng toàn quốc.</p>
@@ -173,6 +194,7 @@ require("templates/header_product.php");
 	</div>
 </section>
 <script>
+//Product gallery large
 $("#zoom_01").elevateZoom({constrainType:"height", constrainSize:"350", zoomType: "lens", containLensZoom: "true", gallery:'thumbnails', cursor: 'pointer', galleryActiveClass: "active"}); 
 
 //pass the images to Fancybox
@@ -185,5 +207,46 @@ $("#zoom_01").bind("click", function(e) {
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel();
 });
+//Product gallery small medium
+var myIndex = 0;
+carousel();
 
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " white";
+}
 </script>
