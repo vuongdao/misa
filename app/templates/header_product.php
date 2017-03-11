@@ -15,16 +15,17 @@ if (isset($id)) {
 echo "<title>Tên danh mục chi tiết | misashop</title>";
 }
 ?>
+<link rel="stylesheet" href="../public/css/w3.css" type="text/css">
 <link rel="stylesheet" href="../public/js/carousel/owl.carousel.min.css">
 <link rel="stylesheet" href="../public/js/carousel/owl.theme.default.min.css">
-<link rel="stylesheet" href="../public/css/w3.css" type="text/css">
-<link rel="stylesheet" href="../public/css/theme-red.css">
 <link rel="stylesheet" href="../public/css/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../library/fancybox/jquery.fancybox.css" type="text/css">
+
 
 <script src="../public/js/jquery-3.1.1.min.js" type="text/javascript"></script>
 <script src="../public/js/carousel/owl.carousel.min.js"></script>
 <script src="../public/js/elevatezoom-master/jquery.elevatezoom.js"></script>
-
+<script src="../library/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
 
 </head>
 <body>
