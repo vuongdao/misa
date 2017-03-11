@@ -161,7 +161,7 @@ require("templates/header_product.php");
 				</div>
 			</div>
 			<div class="quarter">
-				<div class="light-grey padding">
+				<div class="light-gray padding">
 				
 					<i class="fa fa-truck fa-2x left margin-right"></i><p>Giao hàng toàn quốc.</p>
 					<i class="fa fa-refresh fa-2x left margin-right"></i><p>Đổi trả hàng trong vòng 3 ngày.</p>

@@ -299,7 +299,7 @@ input[type=checkbox].check:disabled+.validate,input[type=radio].radio:disabled+.
 .white,.hover-white:hover{color:#000!important;background-color:#fff!important}
 .black,.hover-black:hover{color:#fff!important;background-color:#000!important}
 .grey,.hover-grey:hover,.gray,.hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
-.light-grey,.hover-light-grey:hover,.light-gray,.hover-light-gray:hover{color:#000!important;background-color:#fafafa!important}
+.light-grey,.hover-light-grey:hover{color:#000!important;background-color:#f1f1f1!important}.light-gray,.hover-light-gray:hover{color:#000!important;background-color:#fafafa!important}
 .dark-grey,.hover-dark-grey:hover,.dark-gray,.hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
 .pale-red,.hover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
 .pale-green,.hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
