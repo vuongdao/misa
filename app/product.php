@@ -58,7 +58,7 @@ require("templates/header_product.php");
 						</div>
 					</div>
 				</div>
-				<div class="l6 m12 s12">
+				<div class="col l6 m12 s12">
 					<h1 class="large margin-0">Nước hoa nam Deep Sea Jeanne D'urfe Paris 50ml</h1>
 					<p><span class="text-grey">Thương hiệu: </span><a href="#" class="text-blue hover-opacity">Gucci</a></p>
 					<p>Nước hoa mini cho nam Versace Eros Eau De Toilette với hương thơm mạnh mẽ, cá tính nhưng ẩn giấu dư vị nống ấm, quyến luyến dụ hoặc.</p>
@@ -67,7 +67,7 @@ require("templates/header_product.php");
 					<p><span class="text-grey">Mã sản phẩm: </span>MS000587.</p>
 					<p><span class="text-grey">Tình trạng: </span>Còn hàng.</p>
 					<p>Thời gian và phí giao hàng được ước tính sau khi đặt hàng. Xem <a href="#" class="text-blue"> chính sách giao hàng.</a></p>
-					<div class="bar large"><button class="btn red padding-large"><i class="fa fa-shopping-cart"></i></button><a href="" class="btn red padding-large">Mua hàng ngay</a></div>
+					<div class="bar large"><button class="btn theme-d4 padding-large"><i class="fa fa-shopping-cart"></i></button><a href="" class="btn theme-d2 padding-large">Mua hàng ngay</a></div>
 				</div>
 				<div class="col"><hr></div>
 				<div class="product-content col section">

@@ -7,7 +7,7 @@ mb_http_input('UTF-8');
 mb_language('uni');
 mb_regex_encoding('UTF-8');
 ob_start('mb_output_handler');
-date_default_timezone_set('Asia/Ho_Chi_Minh');
+date_default_timezone_set('Europe/Rome');
 
 /*
 |--------------------------------------------------------------------------

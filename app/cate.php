@@ -1,6 +1,8 @@
+
 <?php
 require("templates/header_cate.php");
 ?>
+
 <div id="breadcrunb" class="light-grey">
 	<div class="content padding text-grey">
 		<span><a href="#">TRANG CHỦ</a></span>	/
@@ -8,8 +10,11 @@ require("templates/header_cate.php");
 		<span class="padding-tiny"><a href="#">CHĂM SÓC DA</a></span>
 	</div>
 </div>
+
+
 <section class="content">
 	<div class="section">
+		
 		<div class="row">
 			<div class="col padding-left hide-small hide-medium" style="width:225px;">
 				<div class="light-grey padding margin-bottom">
@@ -79,7 +84,7 @@ require("templates/header_cate.php");
 								<div class="info">
 									<a href="#"><h3 class="small">Sữa tắm cao cấp Happy Bath Hàn Quốc Chai 500ml + Túi 250ml</h3></a>
 									<p>
-										<span class="text-red large">220,000đ</span>
+										<span class="text-theme-d3 large">220,000đ</span>
 										<span class="text-grey"><del>150,000đ</del></span>
 									</p>
 								</div>
@@ -99,7 +104,7 @@ require("templates/header_cate.php");
 								<div class="info">
 									<a href="#"><h3 class="small">Sữa tắm cao cấp Happy Bath Hàn Quốc Chai 500ml + Túi 250ml</h3></a>
 									<p>
-										<span class="text-red large">220,000đ</span>
+										<span class="text-theme-d3 large">220,000đ</span>
 										<span class="text-grey"><del>150,000đ</del></span>
 									</p>
 								</div>
@@ -119,7 +124,7 @@ require("templates/header_cate.php");
 								<div class="info">
 									<a href="#"><h3 class="small">Sữa tắm cao cấp Happy Bath Hàn Quốc Chai 500ml + Túi 250ml</h3></a>
 									<p>
-										<span class="text-red large">220,000đ</span>
+										<span class="text-theme-d3 large">220,000đ</span>
 										<span class="text-grey"><del>150,000đ</del></span>
 									</p>
 								</div>
@@ -139,7 +144,7 @@ require("templates/header_cate.php");
 								<div class="info">
 									<a href="#"><h3 class="small">Sữa tắm cao cấp Happy Bath Hàn Quốc Chai 500ml + Túi 250ml</h3></a>
 									<p>
-										<span class="text-red large">220,000đ</span>
+										<span class="text-theme-d3 large">220,000đ</span>
 										<span class="text-grey"><del>150,000đ</del></span>
 									</p>
 								</div>
@@ -159,7 +164,7 @@ require("templates/header_cate.php");
 								<div class="info">
 									<a href="#"><h3 class="small">Sữa tắm cao cấp Happy Bath Hàn Quốc Chai 500ml + Túi 250ml</h3></a>
 									<p>
-										<span class="text-red large">220,000đ</span>
+										<span class="text-theme-d3 large">220,000đ</span>
 										<span class="text-grey"><del>150,000đ</del></span>
 									</p>
 								</div>
@@ -179,7 +184,7 @@ require("templates/header_cate.php");
 								<div class="info">
 									<a href="#"><h3 class="small">Sữa tắm cao cấp Happy Bath Hàn Quốc Chai 500ml + Túi 250ml</h3></a>
 									<p>
-										<span class="text-red large">220,000đ</span>
+										<span class="text-theme-d3 large">220,000đ</span>
 										<span class="text-grey"><del>150,000đ</del></span>
 									</p>
 								</div>
@@ -199,7 +204,7 @@ require("templates/header_cate.php");
 								<div class="info">
 									<a href="#"><h3 class="small">Sữa tắm cao cấp Happy Bath Hàn Quốc Chai 500ml + Túi 250ml</h3></a>
 									<p>
-										<span class="text-red large">220,000đ</span>
+										<span class="text-theme-d3 large">220,000đ</span>
 										<span class="text-grey"><del>150,000đ</del></span>
 									</p>
 								</div>
@@ -219,7 +224,7 @@ require("templates/header_cate.php");
 								<div class="info">
 									<a href="#"><h3 class="small">Sữa tắm cao cấp Happy Bath Hàn Quốc Chai 500ml + Túi 250ml</h3></a>
 									<p>
-										<span class="text-red large">220,000đ</span>
+										<span class="text-theme-d3 large">220,000đ</span>
 										<span class="text-grey"><del>150,000đ</del></span>
 									</p>
 								</div>
@@ -239,7 +244,7 @@ require("templates/header_cate.php");
 								<div class="info">
 									<a href="#"><h3 class="small">Sữa tắm cao cấp Happy Bath Hàn Quốc Chai 500ml + Túi 250ml</h3></a>
 									<p>
-										<span class="text-red large">220,000đ</span>
+										<span class="text-theme-d3 large">220,000đ</span>
 										<span class="text-grey"><del>150,000đ</del></span>
 									</p>
 								</div>
@@ -259,7 +264,7 @@ require("templates/header_cate.php");
 								<div class="info">
 									<a href="#"><h3 class="small">Sữa tắm cao cấp Happy Bath Hàn Quốc Chai 500ml + Túi 250ml</h3></a>
 									<p>
-										<span class="text-red large">220,000đ</span>
+										<span class="text-theme-d3 large">220,000đ</span>
 										<span class="text-grey"><del>150,000đ</del></span>
 									</p>
 								</div>
@@ -279,7 +284,7 @@ require("templates/header_cate.php");
 								<div class="info">
 									<a href="#"><h3 class="small">Sữa tắm cao cấp Happy Bath Hàn Quốc Chai 500ml + Túi 250ml</h3></a>
 									<p>
-										<span class="text-red large">220,000đ</span>
+										<span class="text-theme-d3 large">220,000đ</span>
 										<span class="text-grey"><del>150,000đ</del></span>
 									</p>
 								</div>
@@ -299,7 +304,7 @@ require("templates/header_cate.php");
 								<div class="info">
 									<a href="#"><h3 class="small">Sữa tắm cao cấp Happy Bath Hàn Quốc Chai 500ml + Túi 250ml</h3></a>
 									<p>
-										<span class="text-red large">220,000đ</span>
+										<span class="text-theme-d3 large">220,000đ</span>
 										<span class="text-grey"><del>150,000đ</del></span>
 									</p>
 								</div>
@@ -326,11 +331,21 @@ require("templates/header_cate.php");
 			  <a href="#" class="button">&raquo;</a>
 			</div>
 		</div>
-		
 		<div class="filter-bar bar light-grey center">
-			<a style="width:33.33%" href="#" class="bar-item border-right">Danh mục</a>
+			<span class="opennav xlarge" onclick="w3_open()">&#9776;</span> 
 			<a style="width:33.33%" href="#" class="bar-item border-right">Thương hiệu</a>
 		 	<a style="width:33.33%" href="#" class="bar-item">Sắp xếp</a>
 		</div>
+		
 
 </section>
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>

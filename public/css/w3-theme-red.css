@@ -15,6 +15,7 @@
 
 .theme {color:#fff !important; background-color:#f44336 !important}
 .text-theme {color:#f44336 !important}
+.text-theme-d3 {color:#c51703 !important}
 .border-theme {border-color:#f44336 !important}
 
 .hover-theme:hover {color:#fff !important; background-color:#f44336 !important}

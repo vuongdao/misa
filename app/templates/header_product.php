@@ -16,6 +16,7 @@ echo "<title>Tên danh mục chi tiết | misashop</title>";
 }
 ?>
 <link rel="stylesheet" href="../public/css/w3.css" type="text/css">
+<link rel="stylesheet" href="../public/css/theme-red.css" type="text/css">
 <link rel="stylesheet" href="../public/js/carousel/owl.carousel.min.css">
 <link rel="stylesheet" href="../public/js/carousel/owl.theme.default.min.css">
 <link rel="stylesheet" href="../public/css/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -99,8 +100,8 @@ echo "<title>Tên danh mục chi tiết | misashop</title>";
 			</div>
 			<div class="col l4 padding-16">
 				<div class="bar">
-					<input type="text" class="bar-item border border-red input" placeholder="Tìm kiếm sàn phẩm...">
-					<button class="bar-item btn red ripple border border-red">Tìm kiếm</button>
+					<input type="text" class="bar-item border border-theme input" placeholder="Tìm kiếm sàn phẩm...">
+					<button class="bar-item btn theme-d2 ripple border border-theme">Tìm kiếm</button>
 				</div>
 			</div>
 			<div class="col l3 padding-16">
